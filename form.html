@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=form, initial-scale=1.0">
+  <title>form</form></title>
+</head>
+<body>
+  <form id="form">
+    <input type="text" id="username" placeholder="Username">
+    <input type="email" id="email" placeholder="email" required>
+    <input type="submit" value="Register">
+  </form>
+
+  <script>
+    let form  = document.getElementById("form")
+    form.addEventListener('submit',function(event){
+      event.preventDefault
+
+      let username = document.getElementById('username').value
+
+      console.log(username)
+
+      let email = document.getElementById('email').value
+
+      console.log(email)
+    })
+  </script>
+</body>
+</html>
